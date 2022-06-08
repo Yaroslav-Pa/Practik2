@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "jquery": "^3.6.0"
+  },
+  "name": "practik_shop",
+  "version": "1.0.0",
+  "description": "practik thirt course",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yaroslav-Pa/Practik2.git"
+  },
+  "author": "Yaroslav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yaroslav-Pa/Practik2/issues"
+  },
+  "homepage": "https://github.com/Yaroslav-Pa/Practik2#readme"
+}
