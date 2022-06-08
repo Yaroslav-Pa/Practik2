@@ -1,0 +1,770 @@
+@font-face {
+    font-family: "RotondaBold";
+    src: url("../fonts/RotondaBold.svg#RotondaBlod") format("svg"),
+         url("../fonts/RotondaBold.ttf") format("truetype"),
+         url("../fonts/RotondaBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+@font-face {
+    font-family: "RotondaMedium";
+    src: url("../fonts/RotondaMedium.svg#RotondaMedium") format("svg"),
+         url("../fonts/RotondaMedium.ttf") format("truetype"),
+         url("../fonts/RotondaMedium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff') format('woff'),
+        url('../fonts/RobotoSlab-Regular.ttf') format('truetype'),
+        url('../fonts/RobotoSlab-Regular.svg#RobotoSlab-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Roboto Slab';
+    color: #324950;
+    background-color: #EDEDED;
+}
+
+h1, h2, h3 {
+    font-family: 'RotondaBold';
+}
+
+button {
+    font-family: "RotondaMedium";
+    cursor: pointer;
+}
+
+input:focus, button:focus, textarea:focus {
+    outline: none;
+
+}
+
+.menu {
+    padding-top: 50px;
+}
+header {
+    padding-top: 19px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.redText {
+    color: #CF2333;
+    font-weight: normal;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.menu__item {
+    margin: 0 13px;
+}
+
+.menu__item a {
+    font-size: 18px;
+    color: #324950;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.openMenu {
+    visibility: hidden;
+}
+
+.closeMenu {
+    display: none;
+    width: 55px;
+    padding-left: 10px;
+}
+
+.burgerMenu {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    padding-top: 10px;
+
+}
+.burgerMenu img {
+    height: 40px;
+}
+.menuUp {
+    display: block;
+}
+
+.hided {
+    
+    visibility: hidden;
+}
+
+.active {
+    z-index: 3;
+    position: absolute;
+    background-color: #324950; 
+    width: 100%;
+    right: 0;
+}
+
+.active a {
+    color: #fff;
+}
+
+.active li {
+    padding-bottom: 30px;
+}
+
+.active .openMenu {
+    display: none;
+}
+
+
+.search {
+    border: 1px;
+    float: right;
+    padding-top: 20px;
+}
+
+
+.search input[type=text] {
+    font-size: 17px;
+    border: none;
+    float: left;
+    background: transparent;
+    height: 27px;
+    border-bottom: 1px solid #324950;
+    margin-left: 15px;
+
+  }
+  
+
+ .search button {
+    float: left;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    border-bottom: 1px solid #324950;
+    height: 27px;
+  }
+
+  .search img {
+      margin-top: -5px;
+  }
+
+
+
+.footerFirst {
+    background-color: #2D3F45;
+    padding-top: 5px;
+}
+
+.footerFirst .row {
+    margin-top: 10px;
+}
+
+.footer_item {
+    margin: 0 13px;
+    margin-top: 5px;
+}
+
+.footer_item a {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer_link {
+    margin: 0 13px;
+}
+
+.crosses {
+    padding-top: 20px;
+}
+
+.greenText {
+    color: #57984C;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #324950;
+    color: #B9B9B9;
+    font-family: 'Roboto';
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+@media (max-width: 1060px){
+    .footer_link {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 991px){
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .search {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu__item {
+        margin-top: -25px;
+    }
+
+    .footer_item {
+        margin: 0 5px;
+    }
+    .footer_link {
+        margin-bottom: 15px;
+    }
+    .openMenu {
+        visibility: visible;
+    }
+    .menuUp {
+        display: none;
+    }
+    .hided {
+        visibility: visible;
+    }
+
+
+}
+@media (max-width: 767px){
+    .menu__itemm a {
+        font-size: 16px;
+    }
+    .menu__itemm {
+        margin: 0 5px;
+    }
+    .footer_item a {
+        font-size: 14px;
+    }
+    .footer_menu {
+        display: block;
+        margin-left: -20px;
+        text-align: center;
+        }
+    .search {
+        margin-bottom: -30px;
+    }
+}
+@media (max-width: 575px){
+    .burgerMenu {
+        margin-right: 25px;
+    }
+    
+}
+@media (max-width: 403px){
+    .burgerMenu {
+        margin-right: 25px;
+    }
+    .search input {
+        width: 70%;
+    }
+}
+/* ------------------------Main page ------------------------*/
+header {
+    background-image: url(../images/bg.png);
+}
+
+.title {
+    padding: 240px 0 270px 0;
+}
+
+.title h1 {
+    font-size: 48px;
+    color: #735440;
+}
+
+.title2 {
+    padding: 20px 0 20px 0;
+}
+
+.title2 h1 {
+    font-size: 48px;
+    color: #735440;
+}
+
+.title button {
+    margin-top: 75px;
+    width: 160px;
+    height: 50px;
+    background-color: #57984C;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 20px, 30px;
+}
+
+.main-back{
+    background-color: #fff;
+}
+
+.title button:hover {
+    background-color: #fff;
+    color: #57984C;
+    transition: all 0.3s ease;
+}
+
+.colection2  {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    background-color: #FCF0F0;
+}
+.colection  {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.vision {
+    background-image: url('../images/Union.png');
+    padding-top: 50px;
+}
+
+.vision_title {
+    font-size: 64px;
+}
+
+.vision_text {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.vision_img img {
+    width: 100%;
+    box-shadow: 14px 14px 8px 0px rgba(34, 60, 80, 0.06);
+}
+
+.vision_2 {
+    padding: 100px 0;
+}
+
+#btn_sub {
+    margin-bottom: 20px;
+}
+
+.mainActiv {
+    text-align: center;
+}
+
+.mainActiv_title {
+    margin-top: 95px;
+}
+
+.mainActiv_product h2 {
+    font-size: 24px;
+    color: #57984C;
+}
+
+.mainActiv_product p {
+    font-size: 18px;
+    margin-bottom: 95px;
+}
+
+.mainActiv_img {
+    margin-bottom: 40px;
+}
+
+.mainActiv_img img {
+    width: 100%;
+}
+
+.mainActiv_line {
+    padding: 10px 0;
+}
+
+
+@media (max-width: 991px){
+
+    .mainActiv_product p {
+        margin-bottom: 0px;
+    }
+    
+    .mainActiv_img {
+        margin-bottom: -50px;
+    }
+
+    .mainActiv_last {
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width: 991px){
+
+    .title {
+        padding: 140px 0 170px 0;
+    }
+    .title2 {
+        padding: 10px 0 10px 0;
+    }
+    .vision {
+        text-align: center;
+    }
+    .vision_img {
+        padding-top: 50px;
+    }
+
+
+}
+@media (max-width: 767px){
+    .product_item img {
+        max-height: 250px;
+    }
+    header {
+        background-position: bottom;
+    }
+    .vision_img img {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1  {
+      width: 100%;
+      *width: 100%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+      width: 14.285714285714285714285714285714%;
+      *width: 14.285714285714285714285714285714%;
+      max-width: 14.285714285714285714285714285714% !important;
+  flex:none !important;
+    }
+  }
+   
+  @media (min-width: 1200px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+      width: 14.285714285714285714285714285714%;
+      *width: 14.285714285714285714285714285714%;
+      max-width: 14.285714285714285714285714285714% !important;
+  flex:none !important;
+    }
+}
+/* ------- Products - Tomato All -------*/
+
+.headerImg {
+    background-image: url(../images/tomatoAll/bgcucumberAll.jpg);
+    height: 480px;
+    background-position: center;
+}
+.headerImg2 {
+    background-image: url(../images/contactUs/image7.png);
+    height: 480px;
+    background-position: center;
+}
+
+.visionMission .title_text1 {
+    font-size: 44px;
+}
+
+.visionMission {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.crosses {
+    margin-bottom: 30px;
+}
+
+.borderedLeft {
+    border-left: 3px solid #EB5757;
+}
+
+.borderedLeft .borderedLeft_text {
+    margin-left: 25px;
+}
+
+.markets h2 {
+    font-size: 20px;
+    max-width: 290px;
+}
+
+.markets .container {
+    background-color: #FFFFFF;
+}
+
+#tomatoAll{
+    background-color: #FFFFFF;
+    background-image: none;
+}
+
+/* section {
+    background-color: #FCF0F0;
+} */
+
+.Pinkback {
+    background-color: #dcfddc;
+}
+
+hr {
+    background-color: #324950;
+}
+
+p {
+    font-size: 17px;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+}
+
+.markets_items {
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+
+.products {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.products .items {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.products .item {
+    color: #57984C;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.products .item img {
+    width: 100%;
+}
+
+.products .item_text {
+    background-color: #fff;
+    padding-top: 5px;
+}
+
+.products h2 {
+    font-size: 20px;
+}
+
+.products p {
+    margin-top: -5px;
+    padding-bottom: 5px;
+}
+
+.products a {
+    color:#57984C;
+}
+
+.products a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+
+@media (max-width: 767px){
+    .headerImg {
+        height: 240px;
+        background-position: top;
+        background-size: 300%;
+    }
+    .headerImg2 {
+        height: 240px;
+        background-position: top;
+        background-size: 300%;
+    }
+    .visionMission .title_text1 {
+        text-align: center;
+    }
+    .crosses {
+        display: flex;
+        justify-content: center;
+    }
+    .search {
+        margin-bottom: 20px;
+    }
+    
+
+}
+
+@media (max-width: 991px){
+
+}
+
+
+/*-------------Tomato One----------------*/
+
+.tomatoOne {
+    background-image: url(../images/tomatoOne/tomatoOneBg.svg);
+    background-color: #f7f7f7;
+    padding-top: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 20px rgb(212, 212, 212);
+    position: relative;
+    z-index: 999;
+}
+
+.logo a img{
+    height: 80px;
+}
+
+.goBack a {
+    font-size: 14px;
+    color: #57984C;
+}
+
+.tomatoOne .container-fluid{
+    padding: 0px;
+    width: 60%;
+}
+
+.goBack {
+    margin-bottom: 18px;
+}
+
+.goBack img {
+    margin-right: 10px;
+}
+
+.tomatoOne {
+    padding-bottom: 170px;
+}
+
+.tomatoOne .title_text h1, h2{
+    font-size: 54px;
+}
+
+.tomatoOne .title_text h2{
+    color: #57984C;
+}
+
+.qulity {
+    padding-top: 45px;
+}
+
+.crosses {
+    padding: 10px 0px 30px 0px;
+}
+
+.quality_text {
+    color: #CF2333;
+    font-size: 30px; 
+}
+
+.tomatoImage {
+    margin-top: 10px;
+}
+
+.tomatoImage img {
+    width: 100%;
+}
+
+.textBlock {
+    font-size: 20px;
+}
+
+.textBlock_item {
+    margin-top: 40px;
+    line-height: 2;
+}
+
+.textBlock_item ul{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.textBlock_item h3 {
+    font-size: 20px;
+    color: #57984C;
+}
+
+.textBlock_item hr {
+    background-color: #57984C;
+    
+}
+
+.textBlock_item b {
+    font-size: 20px;
+}
+
+.textBlock_item li {
+    list-style-type:disc;
+    color: #57984C;
+}
+
+.textBlock_item span, .textBlock_item p{
+    color: #324950;
+    font-size: 17px;
+}
+
+.download {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
+.download button img {
+    height: 20px;
+}
+
+.download button {
+    background-color: transparent;
+    padding: 8px 30px;
+    border: 3px solid #57984C;
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+
+.download button:hover {
+    background-color: rgb(87, 152, 76, 0.1);
+}
+
+.download span {
+    font-family: 'Roboto Slab';
+    padding-left: 10px;
+    color: #57984C;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
