@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="manifest" href="mainfest.json">
+    <script>
+        if ('serviceWorker' in navigator) {
+           navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() {
+               console.log('Service worker registered!');
+           });
+       }
+    </script>
     
     <title>AGREDIA agriculture</title>
 </head>
