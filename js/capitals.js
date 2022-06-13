@@ -11,7 +11,7 @@ function getCapitals(){
                     let list = '';
                     data.forEach(country => {
                         list += `<li>${ country.capital[0] }</li>`;  
-                        const half = Math.ceil((list.length+1) / 2);    
+                        const half = Math.ceil((list.length+1) / 1.9);    
                         const firstHalf = list.slice(0, half)
                         const secondHalf = list.slice(-half)
 
